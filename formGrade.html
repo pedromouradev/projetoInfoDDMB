@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Grade de Matérias</title>
+    <meta name="viewport" content="width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="hhtps://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+       body{
+            background-image: url(img/MateriasIMG.png);
+            background-size: 100%;
+             }
+    </style>
+   
+</head>
+
+<body>
+
+    <section class="box-login">
+        <div class="user-icon-wraper">
+            <div class="barra-login"></div>
+            <div class="user-icon"></div>
+        </div>
+        <form action="php/salvarGrade.php" method="post">
+            
+            <h3 class="text-secondary text-center espaco">Módulo:</h3>
+            <div class="input">
+                <select name="cEquipe" id="cboEquipe">
+                    <option value="">Selecione o Módulo:</option>
+                    <option value="Fundamental">Fundamental</option>
+                    <option value="Médio">Médio</option>
+            
+                </select>
+                
+            </div>
+            <h3 class="text-secondary text-center espaco">Disciplina:</h3>
+            <div class="input">
+                <input type="text" name="tDisciplina"/>
+            </div>
+
+            <small id="loginHelp" class="form-text text-muted" style="color: white;">Nunca vamos compartilhar seus dados com ninguém.
+            </small>
+            <br>
+            <br>
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+
+       
+    </section>
+</body>
+
+</html>

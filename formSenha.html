@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fazer login</title>
+    <meta name="viewport" content="width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="hhtps://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+       body{
+            background-image: url(img/FundoTelaLogin.jpeg);
+            background-size: 100%;
+             }
+    </style>
+   
+</head>
+
+<body>
+
+    <section class="box-login">
+        <div class="user-icon-wraper">
+            <div class="barra-login"></div>
+            <div class="user-icon"></div>
+        </div>
+        <form action="php/salvarSenha.php" method="post">
+            <h3 class="text-secondary text-center espaco">Cadastro de Usuário:</h3>
+            <div class="input">
+                <input type="text" placeholder="Nome..." name="tNome" />
+                <div class="icon-input"></div>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Login..." name="tLogin" />
+                <div class="icon-input"></div>
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Senha..." name="tSenha" />
+                <div class="icon-input"></div>
+            </div>
+            <small id="loginHelp" class="form-text text-muted" style="color: white;">Nunca vamos compartilhar seus dados com ninguém.
+            </small>
+            <br>
+            <br>
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+
+       
+    </section>
+</body>
+
+</html>

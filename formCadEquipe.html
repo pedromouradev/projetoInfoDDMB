@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fazer login</title>
+    <meta name="viewport" content="width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="hhtps://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+       body{
+            background-image: url(img/FundoTelaLogin.jpeg);
+            background-size: 100%;
+             }
+    </style>
+   
+</head>
+
+<body>
+
+    <section class="box-login">
+        <div class="user-icon-wraper">
+            <div class="barra-login"></div>
+            <div class="user-icon"></div>
+        </div>
+        <form action="php/salvarCadEquipe.php" method="post" enctype="multipart/form-data">
+            <h3 class="text-secondary text-center espaco">Cadastro de Professor</h3>
+
+            <h3 class="text-secondary text-center espaco">Nome:</h3>
+            <div class="input">
+                <input type="text" placeholder="Nome..." name="tNome" />
+                <div class="icon-input"></div>
+            </div>
+
+            <h3 class="text-secondary text-center espaco">Função:</h3>
+            <div class="input">
+                <select name="cFuncao" id="cboFuncao">
+                    <option value="">Selecione Uma Função</option>
+                    <option value="Diretora da Unidade Escolar">Diretora da Unidade Escolar</option>
+                    <option value="Coordenadora de Organização Escolar">Coordenadora de Organização Escolar</option>
+                    <option value="Coordenadora de Gestão Pedagógica">Coordenadora de Gestão Pedagógica</option>
+                    <option value="Professor PROATEC">Professor PROATEC</option>
+                    <option value="Professor Readaptado">Professor Readaptado</option>
+                </select>
+                
+            </div>
+
+            <h3 class="text-secondary text-center espaco">Foto:</h3>
+            <div class="input">
+                <input type="file" name="tFoto" accept="img/*"/>
+            </div>
+            <small id="loginHelp" class="form-text text-muted" style="color: white;">Nunca vamos compartilhar seus dados com ninguém.
+            </small>
+            <br>
+            <br>
+            <input type="submit" name="acao" value="Enviar">
+        </form>
+
+       
+    </section>
+</body>
+
+</html>

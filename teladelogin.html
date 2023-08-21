@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fazer login</title>
+    <meta name="viewport" content="width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="hhtps://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+       body{
+            background-image: url(img/FundoTelaLogin.jpeg);
+            background-size: 100%;
+             }
+    </style>
+   
+</head>
+
+<body>
+
+    <section class="box-login">
+        <div class="user-icon-wraper">
+            <div class="barra-login"></div>
+            <div class="user-icon"></div>
+        </div>
+        <form method="post" action="php/verificar.php">
+            <h3 class="text-secondary text-center espaco">Painel de Controle:</h3>
+            <div class="input">
+                <input type="text" placeholder="Login..." name="login" />
+                <div class="icon-input"></div>
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Senha..." name="senha" />
+                <div class="icon-input"></div>
+            </div>
+            <br>
+            <br>
+            <input type="submit" name="acao" value="Logar!">
+        </form>
+
+       
+    </section>
+</body>
+
+</html>
